@@ -32,6 +32,7 @@ setuptools.setup(
     packages=["pywal_16"],
     entry_points={"console_scripts": ["wal=pywal_16.__main__:main"]},
     python_requires=">=3.5",
+    install_requires=list(open("requirements.txt")),
     test_suite="tests",
     include_package_data=True,
     zip_safe=False)
